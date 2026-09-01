@@ -6,6 +6,10 @@ The repository is explicitly split into two versions to highlight this technical
 
 ---
 
+💡 **Fun Fact & Context:** The **Version 1** of this dynamic list was coded during my **very first week of university**. Because I spent the previous two months self-studying low-level computer science concepts and C memory architecture, I managed to build functional node-linking structures.
+
+---
+
 ## 📂 Repository Structure
 
 * [**`v1-static-version/`**](./v1-static-version)
