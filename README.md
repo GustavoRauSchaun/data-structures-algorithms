@@ -50,4 +50,3 @@ As this is **Version 1.0 (MVP)**, the system uses static array memory allocation
 * Dynamic Memory Allocation (`malloc`, `realloc`, and Linked Lists) to remove the fixed size limit.
 * Data Persistence in Text or Binary Files (`fopen`, `fwrite`), allowing products to remain saved even after closing the program.
  to remove the fixed size limit.
-* Data Persistence in Text or Binary Files (`fopen`, `fwrite`), allowing products to remain saved even after closing the program.
