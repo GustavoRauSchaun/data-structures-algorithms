@@ -1,52 +1,61 @@
-# 📦 Inventory Control System
+# 📦 Warehouse Inventory System
 
-This is a complete inventory management system developed in C. The project was entirely designed and coded by me with **only 1.5 months of studies in the field**, taking about 5 hours of structured development.
+Welcome to my Inventory Control portfolio project. This repository is designed to showcase my **programming evolution and learning curve in C**, demonstrating how a project can mature from basic structured logic into a professional, modular, and dynamic system.
 
-The main goal was to apply fundamental concepts of structured programming, static memory allocation, and safe data manipulation to solve a real product logistics problem.
-
----
-
-## 🚀 System Features
-
-The program operates via an interactive terminal and offers a menu with 8 essential operations:
-1. **Register Product:** Registration with automatic validation to prevent duplicate codes.
-2. **List Products:** Organized display of all active items, avoiding reading junk data from memory.
-3. **Search by Code:** Quick localization of a specific product in the database.
-4. **Update Stock:** Exclusive modification of an item's available stock quantity.
-5. **Update Price:** Dynamic adjustment of the financial value assigned to the product.
-6. **Remove Product:** Logical deletion using a left-shift algorithm, maintaining the integrity and contiguity of the array.
-7. **Calculate Total Stock Value:** Automated multiplication of the available volume by the unit price of a chosen item.
-8. **Exit System:** Clean and safe console termination.
+The repository is explicitly split into two versions to highlight this technical growth.
 
 ---
 
-## 🧠 Technical Concepts Applied
+## 📂 Repository Structure
 
-To build this architecture in C, I demonstrated practical mastery in the following topics:
-* **Data Structures (`typedef struct`):** Creation of the custom `PRODUCTS` type to encapsulate multiple properties (name, code, price, stock).
-* **Pass By Reference (Pointers):** Use of references (`int *total_registrations`) to alter global counters directly from within the registration and removal functions.
-* **Safe String Manipulation:** Implementation of format specifier masks (`%14[^\n]` and `%29[^\n]`) in `scanf` to prevent buffer overflow and allow spaces in names.
-* **Scanning and Shift Algorithms:** Linear scanning for ID searches and physical movement of elements in the array to fill gaps after deletions.
+* [**`v1-static-version/`**](./v1-static-version)
+  * **Context:** Developed with only **1.5 months of study** (approx. 5 hours of development).
+  * **Architecture:** Monolithic single-file program (`STOCK_CONTROL.c`) with static memory allocation (`array` capped at 300 records).
+* [**`v2-modular-version/`**](./v2-modular-version)
+  * **Context:** Current advanced version.
+  * **Architecture:** Fully modularized project using header (`.h`) and source (`.c`) files, data persistence, and professional error handling.
 
 ---
 
-## 🛠️ How to Run the Project
+## 🚀 Version 2.0 Features & Technical Upgrades
 
-Make sure you have a GCC compiler configured on your system.
+The current main version (`v2-modular-version`) expands the system to 10 automated management features, using a secure, bulletproof terminal interface:
+1. **Register New Product:** With pointer-driven array expansion and code uniqueness validation.
+2. **List All Products:** Renders active runtime data while strictly ignoring unallocated memory slots.
+3. **Search Product by Code:** High-speed item identification.
+4. **Update Product Stock Quantity:** Targeted data manipulation.
+5. **Update Product Unit Price:** Real-time evaluation adjustment.
+6. **Delete/Remove a Product:** Memory-safe item removal with array contiguity maintenance.
+7. **Calculate Individual Economic Value:** Stock quantity multiplied by its unit price.
+8. **Calculate Total Warehouse Value:** Full inventory matrix reduction to deliver a total financial evaluation.
+9. **Wipe/Clear All Records:** Complete memory reset.
+10. **Data Persistence & Safe Exit:** Automated file serialization and dynamic memory freeing.
 
-1. Clone this repository or download the source code file.
-2. Open the terminal in the project folder and compile the code:
+---
+
+## 🧠 Advanced Computer Science Concepts Applied (V2.0)
+
+* **Dynamic Memory Allocation:** Implemented manual heap management using `malloc` (and realloc/free in underlying headers) to remove all hardcoded database capacity limits.
+* **Architecture Modularization (`.h` / `.c`):** Created clear abstraction layers by separating definitions (`stock.h`) from functional implementations, enforcing clean code principles.
+* **File I/O Persistence:** Built-in automatic database serialization (`load_from_file`) ensuring your store data survives execution cycles by saving straight to the hard drive.
+* **Input Stream & Buffer Validation:** Anti-crash interface engineering. The menu validates input types (`scanf("%d") != 1`) and isolates errors using a dedicated `clear_buffer()` mechanism to block infinite loop bugs.
+
+---
+
+## 🛠️ How to Compile and Run (V2.0)
+
+Make sure you have a working GCC compiler environment.
+
+1. Navigate to the advanced version directory:
    ```bash
-   gcc sistema_estoque.c -o inventory_system
+   cd v2-modular-version
    ```
-3. Run the generated program:
-   * **Windows:** `inventory_system.exe`
-   * **Linux/Mac:** `./inventory_system`
-
----
-
-## 📈 Future Improvements and Next Steps
-As this is **Version 1.0 (MVP)**, the system uses static array memory allocation (limited to 300 records). As evolution goals for my upcoming months of study, I plan to implement:
-* Dynamic Memory Allocation (`malloc`, `realloc`, and Linked Lists) to remove the fixed size limit.
-* Data Persistence in Text or Binary Files (`fopen`, `fwrite`), allowing products to remain saved even after closing the program.
+2. Compile all decoupled module files at once:
+   ```bash
+   gcc *.c -o warehouse_system
+   ```
+3. Run the compiled executable binary:
+   * **Windows:** `warehouse_system.exe`
+   * **Linux/Mac:** `./warehouse_system`
+ed even after closing the program.
  to remove the fixed size limit.
