@@ -12,7 +12,7 @@ The repository is explicitly split into two versions to highlight this technical
   * **Context:** Developed with only **1.5 months of study** (approx. 5 hours of development).
   * **Architecture:** Monolithic single-file program (`STOCK_CONTROL.c`) with static memory allocation (`array` capped at 300 records).
 * [**`v2-modular-version/`**](./v2-modular-version)
-  * **Context:** Current advanced version.
+  * **Context:** Developed with only **2.5 months of study** (approx. 4 hours of development).
   * **Architecture:** Fully modularized project using header (`.h`) and source (`.c`) files, data persistence, and professional error handling.
 
 ---
