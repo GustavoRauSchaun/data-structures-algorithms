@@ -1,4 +1,4 @@
-# ?? Inventory Control System
+# 📦 Inventory Control System
 
 This is a complete inventory management system developed in C. The project was entirely designed and coded by me with **only 1.5 months of studies in the field**, taking about 5 hours of structured development.
 
@@ -6,7 +6,7 @@ The main goal was to apply fundamental concepts of structured programming, stati
 
 ---
 
-## ?? System Features
+## 🚀 System Features
 
 The program operates via an interactive terminal and offers a menu with 8 essential operations:
 1. **Register Product:** Registration with automatic validation to prevent duplicate codes.
@@ -20,7 +20,7 @@ The program operates via an interactive terminal and offers a menu with 8 essent
 
 ---
 
-## ?? Technical Concepts Applied
+## 🧠 Technical Concepts Applied
 
 To build this architecture in C, I demonstrated practical mastery in the following topics:
 * **Data Structures (`typedef struct`):** Creation of the custom `PRODUCTS` type to encapsulate multiple properties (name, code, price, stock).
@@ -30,7 +30,7 @@ To build this architecture in C, I demonstrated practical mastery in the followi
 
 ---
 
-## ??? How to Run the Project
+## 🛠️ How to Run the Project
 
 Make sure you have a GCC compiler configured on your system.
 
@@ -45,7 +45,9 @@ Make sure you have a GCC compiler configured on your system.
 
 ---
 
-## ?? Future Improvements and Next Steps
+## 📈 Future Improvements and Next Steps
 As this is **Version 1.0 (MVP)**, the system uses static array memory allocation (limited to 300 records). As evolution goals for my upcoming months of study, I plan to implement:
 * Dynamic Memory Allocation (`malloc`, `realloc`, and Linked Lists) to remove the fixed size limit.
+* Data Persistence in Text or Binary Files (`fopen`, `fwrite`), allowing products to remain saved even after closing the program.
+ to remove the fixed size limit.
 * Data Persistence in Text or Binary Files (`fopen`, `fwrite`), allowing products to remain saved even after closing the program.
