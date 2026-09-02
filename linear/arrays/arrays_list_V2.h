@@ -49,3 +49,5 @@ void exit_system(PRODUCTS *list);
 /* Persistence Mechanism Functions */
 void save_to_file(const int total_registrations, const int current_capacity, const PRODUCTS list[]);
 void load_from_file(int *total_registratio
+
+#endif // INVENTORY_H
