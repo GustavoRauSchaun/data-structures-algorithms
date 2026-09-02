@@ -1,6 +1,6 @@
-# 📦 Warehouse Inventory System
+# 📦 Warehouse stock System
 
-Welcome to my Inventory Control portfolio project. This repository is designed to showcase my **programming evolution and learning curve in C**, demonstrating how a project can mature from basic structured logic into a professional, modular, and dynamic system.
+Welcome to my stock Control portfolio project. This repository is designed to showcase my **programming evolution and learning curve in C**, demonstrating how a project can mature from basic structured logic into a professional, modular, and dynamic system.
 
 The repository is explicitly split into two versions to highlight this technical growth.
 
